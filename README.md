@@ -103,8 +103,12 @@ depends on your stack — Claude adapts. The core rules are always the same:
 ## Installation
 
 ```bash
+# Clone the repo
+git clone https://github.com/iamsumitanand/Feedback-Driven-Design.git
+
+# Copy the skill folder into Claude's skills directory
 mkdir -p ~/.claude/skills
-unzip feedback-driven-design.skill -d ~/.claude/skills/
+cp -r Feedback-Driven-Design/feedback-driven-design ~/.claude/skills/
 ```
 
 Done. The skill is available in any Claude Code session.
@@ -118,11 +122,7 @@ Done. The skill is available in any Claude Code session.
     references/
       aesthetic-directions.md      ← 9 named aesthetic archetypes for Phase 1
       feedback-templates.md        ← structured review prompts for Phase 3
-    variants/
-      nextjs-tailwind.md           ← drop-in upgrade for Next.js 15 + Tailwind 3.4
 ```
-
----
 
 ## Triggering the skill
 
